@@ -1,3 +1,8 @@
+html {
+    font-size: 62.5%;
+}
+
+
 .inner {
     max-width: 1640px;
     width: 100%;
@@ -12,4 +17,13 @@
 
 .section {
     background: url(../images/main_bg.jpg);
+}
+
+
+
+@media (max-width: 540px) {
+    html {
+        font-size: 0.25641025641vw;
+        /* 390 size에 맞춤 (16/390*6.25/100) */
+    }
 }

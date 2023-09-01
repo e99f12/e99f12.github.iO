@@ -15,6 +15,7 @@
 }
 
 
+
 .logo a {
     background: #15253F;
     border-radius: 0 50px 50px 0;
@@ -22,7 +23,30 @@
 
 }
 
+@media (max-width: 540px) {
+    .logo {
+        position: fixed;
+        top: 30px;
+        left: -5px;
+        transform: rotate(360deg);
+        z-index: 999;
 
+        width: 60px;
+    }
+
+    .logo.on {
+        display: block;
+    }
+
+
+
+    .logo a {
+        background: #15253F;
+        border-radius: 0 50px 50px 0;
+        padding: 20px 30px 20px 25px;
+
+    }
+}
 
 .aside {
     position: fixed;
@@ -131,7 +155,7 @@
 
 .page01 .label span {
     position: absolute;
-    bottom: -45px;
+    bottom: -32px;
     left: 88px;
     width: 10px;
     height: 10px;
@@ -459,7 +483,7 @@ body::after {
 
 .page02 .content_wrap .btn_wrap {
     position: absolute;
-    top: -82px;
+    top: -78px;
     left: 60px;
 }
 
@@ -882,9 +906,7 @@ body::after {
 
 
 
-/* border-radius: 10px;
-background: rgba(255, 255, 255, .3);
-border: 1px solid rgba(0, 0, 0, .2); */
+
 
 /* * {
     outline: 1px solid #ddd;
@@ -897,28 +919,29 @@ border: 1px solid rgba(0, 0, 0, .2); */
     gap: 0;
 }
 
-.page04 .file_wrap>* {
-    flex: 1;
-}
-
-
 .page04 .f_center {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    flex: 1.5;
+}
+
+.page04 .f_right {
+    flex: 2.5;
 }
 
 .page04 .f_center::before {
     content: "";
     position: absolute;
-    top: 20%;
-    left: 52.5%;
+    top: 13%;
+    left: 81%;
     transform: translate(0, -50%);
 
-    width: 245px;
+    width: 700px;
     height: 1px;
-    background: #15253f8e;
+    background: #15253f27;
 }
 
 
@@ -1031,29 +1054,50 @@ border: 1px solid rgba(0, 0, 0, .2); */
     background: rgba(255, 255, 255, .3);
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 10px;
-    padding: 50px 60px;
+    padding: 30px 60px;
     text-align: left;
+}
+
+
+.page04 .f_right::before {
+    content: "";
+    position: absolute;
+    bottom: 32%;
+    right: 50px;
+    transform: translate(0, -50%);
+
+    width: 700px;
+    height: 1px;
+    background: #15253f27;
+}
+
+
+.page04 .f_label strong {
+    position: absolute;
+    top: 220px;
+    right: -38px;
+    transform: translate(-50%, -50%) rotate(90deg);
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    color: #d1180B;
+    text-align: left;
+
+    background: rgba(255, 255, 255, .3);
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 10px 10px 0 0;
+    padding: 5px 50px;
 }
 
 .page04 .f_right .tit {
     margin-bottom: 0px;
 }
 
-.page04 .f_right .f_label strong {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-50%, -50%);
-    display: block;
-    font-size: 32px;
-    font-weight: 300;
-    text-align: right;
-}
 
 .page04 .f_right .tit p {
     font-weight: 900;
     font-size: 64px;
-    text-align: right;
+    text-align: left;
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #15253F;
@@ -1061,6 +1105,7 @@ border: 1px solid rgba(0, 0, 0, .2); */
 
 .page04 .f_right .tit p .sm {
     font-size: 35px;
+    margin-bottom: 30px;
 }
 
 .page04 .f_right .tit p span {
@@ -1071,6 +1116,7 @@ border: 1px solid rgba(0, 0, 0, .2); */
     display: flex;
     flex-direction: column;
     gap: 20px;
+    text-align: right;
 }
 
 .page04 .f_right ul>li .txt h3 {
@@ -1109,19 +1155,21 @@ border: 1px solid rgba(0, 0, 0, .2); */
 
 .page04 .img_deco {
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 
 .page04 .img_deco img {
-    width: 350px;
+    width: 400px;
 }
 
 
-
-
+/* * {
+    outline: 1px solid #ddd;
+}
+ */
 
 
 
@@ -1300,7 +1348,6 @@ border: 1px solid rgba(0, 0, 0, .2); */
 .cover .main_cover .sub_cover>li {
     position: relative;
     line-height: 60px;
-    /* 💥높이덜컹 */
 }
 
 .cover .main_cover .sub_cover>li::before {
@@ -1345,34 +1392,217 @@ border: 1px solid rgba(0, 0, 0, .2); */
 }
 
 
-/* .cover .main_cover>li p {
-    margin: 16px 0 0 0;
-    font-size: 16px;
-    font-weight: 700;
-    color: #15253fab;
-    line-height: 20px;
-    padding: 0 0 0 18px;
+@media (max-width: 540px) {
+
+    /* 오픈메뉴 */
+    .cover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        overflow: hidden;
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 150px;
+        height: 150px;
+        z-index: 998;
+
+        transition: 1.5s;
+    }
+
+
+    .cover_wrap {
+        height: 500px;
+    }
+
+    .cover>ul {
+        position: relative;
+        z-index: 999;
+        visibility: hidden;
+        opacity: 0;
+        transition: 1.5s;
+        /* width: 1600px; */
+        height: 800px;
+        padding: 200px 300px 0 200px;
+    }
+
+    .cover.on>ul {
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+    .cover::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+
+        transform: scale(1);
+        transition: 1.5s;
+    }
+
+    .cover.on {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .cover.on::before {
+        transform: scale(5);
+        border-radius: 50%;
+
+        background: #15253F;
+    }
+
+    .cover .main_cover {
+        position: relative;
+
+        display: flex;
+        background: url(../images/main_bg.jpg);
+
+        padding: 80px 150px 0 150px;
+    }
+
+    .cover .main_cover::before {
+        content: "";
+        position: absolute;
+        top: 95%;
+        left: 0;
+        width: 110px;
+        height: 70px;
+        margin: 0 0 0 -55px;
+        background: #15253F;
+        border-top: 1px solid rgba(255, 255, 255, .25);
+        transform: rotate(45deg);
+        z-index: 999;
+    }
+
+    .cover .main_cover::after {
+        content: "";
+        position: absolute;
+        top: -4%;
+        right: 0;
+        width: 110px;
+        height: 70px;
+        margin: 0 -50px 0 0;
+        background: #15253F;
+        border-bottom: 1px solid rgba(255, 255, 255, .25);
+        transform: rotate(45deg);
+        z-index: 999;
+    }
+
+    .cover .main_cover>li {
+        position: relative;
+        /* height: auto; */
+    }
+
+    .cover .main_cover>li::before {
+        content: "";
+        position: absolute;
+        top: 30px;
+        left: -30px;
+
+        width: 16px;
+        height: 22px;
+        background: #15253f1a;
+        border-radius: 0 30px 30px 0;
+        transform: translate(0, -50%) rotate(0);
+    }
+
+    .cover .main_cover>li:nth-child(even)::before {
+        background: #15253f36;
+
+    }
+
+    .cover .main_cover>li:nth-child(even) {
+        margin-top: 100px;
+        margin-left: 80px;
+    }
+
+    .cover .main_cover>li a {
+        font-size: 65px;
+        font-weight: 800;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #15253F;
+        /* color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, .7); */
+    }
+
+    .cover .main_cover>li:nth-child(2) a {
+        font-size: 80px;
+        color: #15253F;
+        /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #15253F; */
+    }
+
+
+    .cover .main_cover>li:hover a {
+        /* color: #000; */
+    }
+
+
+    .cover .main_cover>li .sub_cover {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 0 40px;
+        width: 350px;
+    }
+
+
+    .cover .main_cover .sub_cover>li {
+        position: relative;
+        line-height: 60px;
+    }
+
+    .cover .main_cover .sub_cover>li::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -25px;
+        transform: translate(-50%, -50%);
+        margin: -10px 0 0 0;
+
+        width: 3px;
+        height: 80px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, .12);
+    }
+
+    .cover .main_cover .sub_cover>li a {
+        display: block;
+        font-size: 24px;
+        font-weight: 500;
+        color: #15253F;
+        line-height: 38px;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        padding: 8px 0;
+
+        -webkit-text-stroke-width: 0px;
+        -webkit-text-stroke-color: none;
+    }
+
+    .cover .main_cover .sub_cover>li a span {
+        font-size: 16px;
+        color: #15253f77;
+        margin: 0 15px 0 0;
+        vertical-align: middle;
+    }
+
+    .cover .main_cover .sub_cover>li strong {
+        display: inline-block;
+        font-size: 15px;
+        color: #15253F;
+        margin: 0 0 0 5px;
+    }
 }
 
-
-.cover .main_cover>li:nth-child(4):before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 8px;
-    transform: translate(-50%, 0);
-    margin: 65px 0 0 0;
-
-    width: 3px;
-    height: 58px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, .12);
-}
-
-
-.cover .main_cover>li p span {
-    display: block;
-} */
 
 .cover .menu {
     position: absolute;
@@ -1448,4 +1678,84 @@ border: 1px solid rgba(0, 0, 0, .2); */
     transform: rotate(-225deg);
     transition: 0.5s 0.6s;
     background: #F5EEE4;
+}
+
+
+@media (max-width: 540px) {
+    .cover .menu {
+        position: absolute;
+        top: 45px;
+        right: 20px;
+        width: 32px;
+        height: 24px;
+        cursor: pointer;
+
+        z-index: 1000;
+    }
+
+    .cover .menu {
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+
+    .cover .menu span {
+        font-size: 0;
+    }
+
+    .cover .menu::before {
+        content: "";
+        position: absolute;
+        inset: 0 0 auto 0;
+        height: 4px;
+        background: #15253F;
+        border-radius: 2px;
+    }
+
+    .cover .menu::after {
+        content: "";
+        position: absolute;
+        inset: auto 0 0 0;
+        height: 4px;
+        background: #15253F;
+        border-radius: 2px;
+    }
+
+    .cover .menu.on::before,
+    .cover .menu.on::after {
+        display: none;
+    }
+
+    .cover .menu span::before {
+        content: "";
+        position: absolute;
+        inset: 50% 0 auto 0;
+        height: 4px;
+        background: #15253F;
+        transform: translate(0, -50%);
+        border-radius: 2px;
+    }
+
+    .cover .menu.on span::before {
+        transform: rotate(45deg);
+        transition: 0.5s 0.2s;
+        background: #F5EEE4;
+    }
+
+    .cover .menu span::after {
+        content: "";
+        position: absolute;
+        inset: 50% 0 auto 0;
+        height: 4px;
+        background: #15253F;
+        transform: translate(0, -50%);
+        border-radius: 2px;
+    }
+
+    .cover .menu.on span::after {
+        transform: rotate(-225deg);
+        transition: 0.5s 0.6s;
+        background: #F5EEE4;
+    }
+
 }
