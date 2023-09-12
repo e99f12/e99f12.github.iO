@@ -2,10 +2,8 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0");
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kranky&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -25,7 +23,7 @@ li {
 }
 
 body {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-family: 'pretendard';
     line-height: 1.4;
     /* line-height: 1; fullpage에서 문제가 생김 js fullpage option : scrollOverflow: false,*/
     word-break: keep-all;
@@ -69,4 +67,17 @@ textarea {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 
     vertical-align: middle;
+}
+
+body::after {
+    /* 소스만 다운받고 화면은 나태내지 않는다. (숨김 처리) */
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+
+    /* load images */
+    content: url(../images/forever.png) url(../images/medi.png) url(../images/soong.png) url(../images/invites.png) url(../images/soongsoil.png);
+    /* 필요한 이미지 소스들 다운 */
 }

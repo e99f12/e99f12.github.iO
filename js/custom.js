@@ -1,5 +1,26 @@
 window.addEventListener('DOMContentLoaded', () => {
 
+    $('.main_slide').slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        speed: 1200,
+        fade: true,
+        slidesToShow: 1,
+
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    autoplay: false,
+                }
+            }
+        ]
+    })
+
 
 
     const ASIDE = document.querySelectorAll('.aside li');
@@ -64,21 +85,25 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-        // gsap.from('.air_box', {
-        //     y: 100,
-        //     autoAlpha: 0,
-        //     delay: 3.5,
-        //     scale: 1.5,
-        //     // repeat: -0,
-        //     // repeat: 2,
-        //     // repeatDelay: 2,
-        //     yoyo: true,
+        gsap.from('.air_box .right .img_box', {
+            y: 100,
+            autoAlpha: 0,
+            delay: 3.5,
 
-        //     // scaleX: 2,
-        //     // transformOrigin: "50% 50%",
-        //     // rotate: 150,
-        //     duration: 0.8,
-        // })
+            scale: 1.5,
+            repeat: -0,
+            repeat: 2,
+            repeatDelay: 2,
+            yoyo: true,
+
+            // scaleX: 2,
+            // transformOrigin: "50% 50%",
+            // rotate: 150,
+            // duration: 0.8,
+            duration: 1, y: 1,
+        });
+
+
     }
 
 
@@ -148,27 +173,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-    // gsap.from('.air_box bottom .right', {
-    //     autoAlpha: 0,
-    //     delay: 1.5,
-    //     scale: 1.5, repeat: -0,
-    //     yoyo: true,
-    //     // scaleX: 2,
-    //     // transformOrigin: "50% 50%",
-    //     // rotate: 150,
-    //     duration: 0.8,
-    // })
-
-
-
-
-    // That(loves).spending
-    // 'time'.coding();
-
-
-
-
-
 
 
     COVER_A.forEach((lnk, idx) => {
@@ -186,12 +190,10 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // 💥탑버튼 작동x
-
-    const TOTOP = document.querySelector('.to_top');
-    TOTOP.addEventListener('click', function () {
-        gsap.to(window, { scrollTo: 0 })
-    })
+    // const TOTOP = document.querySelector('.to_top');
+    // TOTOP.addEventListener('click', function () {
+    //     gsap.to(window, { scrollTo: 0 })
+    // })
 
     const MENU = document.querySelector('.menu');
 
@@ -200,11 +202,36 @@ window.addEventListener('DOMContentLoaded', () => {
         COVER.classList.toggle('on');
     })
 
-    // $('.menu').on('click', function () {
-    //     $(this).toggleClass('on')
-    //     $('.cover').toggleClass('on')
-    // });
 
+    $('.tab_link li').on('click', function (event) {
+        event.preventDefault();
+        let idx = ($(this).index()) //0,1,2
+
+        $(this).addClass('on')
+            .siblings().removeClass('on');
+
+        $('.tab_content .con').eq(idx).addClass('on')
+            .siblings().removeClass('on');
+
+        console.log(event, event.target, event.currentTarget, $(this), $(this).index())
+
+    });
+
+
+    gsap.to(".box", {
+        duration: 10,
+        motionPath: {
+            path: "#path",
+            align: "#path",
+            autoRotate: true,
+            alignOrigin: [0.5, 0.5]
+        }
+    });
+
+    $('.menu').on('click', function () {
+        $(this).toggleClass('on')
+        $('.cover').toggleClass('on')
+    });
 
 })
 

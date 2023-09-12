@@ -4,6 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="신입 웹 퍼블리셔 박혜림 포트폴리오">
+    <meta name="keywords" content="웹 퍼블리셔, UI/UX 디자이너, 웹 디자이너, 포트폴리오">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="2023 박혜림 포트폴리오">
+    <meta property="og:description" content="신입 웹 퍼블리셔 박혜림 포트폴리오">
+    <meta property="og:url" content="https://moon0suns.github.io">
+    <meta property="og:image" content="https://moon0suns.github.io/images/airdrop.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="2023 박혜림 포트폴리오">
+    <meta name="twitter:description" content="신입 웹 퍼블리셔 박혜림 포트폴리오">
+    <meta name="twitter:url" content="https://moon0suns.github.io">
+    <meta name="twitter:image" content="https://moon0suns.github.io/images/airdrop.png">
+
     <meta name="title" content="포트폴리오">
     <meta name="description" content="포트폴리오">
     <title>rim's Portfolio</title>
@@ -11,16 +25,18 @@
     <link rel="icon" href="/images/favicon_h.png">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/fullpage.min.css">
     <link rel="stylesheet" href="./css/style.css?ver=1.0">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/fullpage.min.js"></script>
-    <script src="./js/custom.js?ver=1.0"></script>
+    <script src="./js/custom.js?ver=1.0" defer></script>
 
 </head>
 
@@ -41,12 +57,13 @@
             <li><a href="#p02">02</a></li>
             <li><a href="#p03">03</a></li>
             <li><a href="#p04">04</a></li>
-            <li><a href="#footer">05</a></li>
         </ul>
     </aside>
 
-
-
+    <!-- 
+    <div class="box">
+        <div class="navi"></div>
+    </div> -->
 
     <div id="main" role="main">
 
@@ -79,563 +96,524 @@
                         Decline
                     </div>
                     <div class="right">
-                        <div class="img_box">
-                            <img src="./images/image-removebg-preview.png" alt="">
-                        </div>
                         Accept
                     </div>
                 </div>
             </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1405" height="719" viewBox="0 0 1405 719" fill="none">
+                <path id="path" d="M1 657C1 657 481 761 881 697C1281 633 1488.33 147.667 1371 1" stroke="0" />
+            </svg>
+
         </section>
 
 
         <section id="slide" class="section page02">
             <div class="num">01</div>
             <div class="slide text_s bg01">
-                <div class="inner d_flex ">
-                    <div class="content_wrap">
-                        <div class="bbox">
-                            <div class="content">
-                                <figure class="port_img">
-                                    <img src="./images/forever.jpg" alt="">
-                                </figure>
+                <div class="inner">
+                    <div class="content_wrap d_flex">
+                        <div class="tit_wrap">
+                            <div class="tit_top">
+                                <span>Project</span>
+                                <h2>
+                                    forEVer company
+                                    <strong>포에버 회사</strong>
+                                </h2>
+                                <p>
+                                    볼드한 폰트와 입체적인 이미지가 조화롭게 보일 수 있도록 간결하게 제작하였고
+                                    시원하게 보이는 풀페이지의 특성을 반영해 섹션마다 강약조절을 하며
+                                    세렴됨이 돋보이게 디자인했습니다.
+                                </p>
                             </div>
-                            <div class="content_m">
-                                <figure class="port_img">
-                                    <img src="./images/forever_m.jpg" alt="">
-                                </figure>
-                            </div>
-                            <div class="btn_wrap">
+                            <div class="tit_center">
                                 <ul>
+                                    <strong>style</strong>
                                     <li>
-                                        <div class="btn_w">
-                                            <a href="https://moon0suns.github.io/project11_forever/"
-                                                target="_blank">WEBPAGE</a>
-                                        </div>
+                                        <ul class="small_label">
+                                            <li>responsive</li>
+                                            <li>fullpage</li>
+                                            <li>company</li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        <div class="btn_g">
-                                            <a href="">GUIDE</a>
-                                        </div>
+                                        <dl>
+                                            <dt>Type</dt>
+                                            <dd>반응형 웹디자인</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Tool</dt>
+                                            <dd>HTML5 / CSS3 / fullpage / JAVASCRIPT(jQuery) / swiper</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Color</dt>
+                                            <dd>
+                                                <span class="color c01"></span>
+                                                <span class="color c02"></span>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Font</dt>
+                                            <dd>Pretendard / Noto Sans KR</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Work</dt>
+                                            <dd>개인작업 100%</dd>
+                                        </dl>
                                     </li>
                                 </ul>
                             </div>
                         </div>
+                        <div class="main_slide">
+                            <div class="itm itm01">
+                                <a href="https://moon0suns.github.io/project11_forever/" target="_blank">
+                                    <img src="./images/forever.png" alt="">
+                                </a>
+                            </div>
+                            <div class="itm itm02">
+                                <a href="https://moon0suns.github.io/project11_forever/" target="_blank">
+                                    <img src="./images/forever_m.png" alt="">
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tit_wrap">
-                        <div class="tit_top">
-                            <span>Project</span>
-                            <h2>
-                                forEVer company
-                                <strong>포에버 회사</strong>
-                            </h2>
-                            <p>
-                                볼드한 폰트와 입체적인 이미지가 조화롭게 보일 수 있도록 간결하게 제작하였고
-                                시원하게 보이는 풀페이지의 특성을 반영해 섹션마다 강약조절을 하며
-                                세렴됨이 돋보이게 디자인했습니다.
-                            </p>
-                        </div>
-                        <div class="tit_center">
-                            <ul>
-                                <strong>style</strong>
-                                <li>
-                                    <ul class="small_label">
-                                        <li>responsive</li>
-                                        <li>fullpage</li>
-                                        <li>company</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Type</dt>
-                                        <dd>반응형 웹디자인</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Tool</dt>
-                                        <dd>HTML5 / CSS3 / fullpage / JAVASCRIPT(jQuery) / swiper</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Color</dt>
-                                        <dd>
-                                            <span class="color c01"></span>
-                                            <span class="color c02"></span>
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Font</dt>
-                                        <dd>Pretendard / Noto Sans KR</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Work</dt>
-                                        <dd>개인작업 100%</dd>
-                                    </dl>
-                                </li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="btn_wrap">
+                    <div class="btn_w">
+                        <a href="https://moon0suns.github.io/project11_forever/" target="_blank">
+                            WEBPAGE
+                        </a>
+                    </div>
+                    <div class="btn_g">
+                        <a href="">GUIDE</a>
                     </div>
                 </div>
             </div>
             <div class="slide text_s bg02">
-                <div class="inner d_flex ">
-                    <div class="content_wrap">
-                        <div class="bbox">
-                            <div class="content">
-                                <figure class="port_img">
-                                    <img src="./images/mediram1.jpg" alt="">
-                                </figure>
+                <div class="inner">
+                    <div class="content_wrap d_flex">
+                        <div class="tit_wrap">
+                            <div class="tit_top">
+                                <h2>
+                                    <span>Project</span>
+                                    Mediram Hospital
+                                    <strong>메디람 한방병원</strong>
+                                </h2>
+                                <p>
+                                    병원에 깨끗한 이미지와 주색과 베이지톤을 사용해 신뢰로운 분위기를 강조하여 구성하였습니다.
+                                    기존 홈페이지에서 많은 정보를 한 섹션에 담은 것을
+                                    사용자가 정보를 필요한 정보를 한눈에 볼 수 있도록 리뉴얼해 디자인했습니다.
+                                </p>
                             </div>
-                            <div class="content_m">
-                                <figure class="port_img">
-                                    <img src="./images/mediram_m.jpg" alt="">
-                                </figure>
-                            </div>
-                            <div class="btn_wrap">
+                            <div class="tit_center">
                                 <ul>
+                                    <strong>style</strong>
                                     <li>
-                                        <div class="btn_w">
-                                            <a href="https://moon0suns.github.io/project10_medi"
-                                                target="_blank">WEBPAGE</a>
-                                        </div>
+                                        <ul class="small_label">
+                                            <li>responsive</li>
+                                            <li>Hospital</li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        <div class="btn_g">
-                                            <a href="">GUIDE</a>
-                                        </div>
+                                        <dl>
+                                            <dt>Type</dt>
+                                            <dd>반응형 웹디자인</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Tool</dt>
+                                            <dd>HTML5 / CSS3 / JAVASCRIPT(jQuery) / slick slider/ swiper</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Color</dt>
+                                            <dd>
+                                                <span class="color c01"></span>
+                                                <span class="color c02"></span>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Font</dt>
+                                            <dd>Pretendard / Noto Sans KR</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Work</dt>
+                                            <dd>개인작업 100%</dd>
+                                        </dl>
                                     </li>
                                 </ul>
                             </div>
                         </div>
+                        <div class="main_slide">
+                            <div class="itm itm01">
+                                <a href="https://moon0suns.github.io/project10_medi" target="_blank">
+                                    <img src="./images/medi.png" alt="">
+                                </a>
+                            </div>
+                            <div class="itm itm02">
+                                <a href="https://moon0suns.github.io/project10_medi" target="_blank">
+                                    <img src="./images/medi_m.png" alt="">
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tit_wrap">
-                        <div class="tit_top">
-                            <h2>
-                                <span>Project</span>
-                                Mediram Hospital
-                                <strong>메디람 한방병원</strong>
-                            </h2>
-                            <p>
-                                병원에 깨끗한 이미지와 주색과 베이지톤을 사용해 신뢰로운 분위기를 강조하여 구성하였습니다.
-                                기존 홈페이지에서 많은 정보를 한 섹션에 담은 것을
-                                사용자가 정보를 필요한 정보를 한눈에 볼 수 있도록 리뉴얼해 디자인했습니다.
-                            </p>
-                        </div>
-                        <div class="tit_center">
-                            <ul>
-                                <strong>style</strong>
-                                <li>
-                                    <ul class="small_label">
-                                        <li>responsive</li>
-                                        <li>Hospital</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Type</dt>
-                                        <dd>반응형 웹디자인</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Tool</dt>
-                                        <dd>HTML5 / CSS3 / JAVASCRIPT(jQuery) / slick slider/ swiper</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Color</dt>
-                                        <dd>
-                                            <span class="color c01"></span>
-                                            <span class="color c02"></span>
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Font</dt>
-                                        <dd>Pretendard / Noto Sans KR</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Work</dt>
-                                        <dd>개인작업 100%</dd>
-                                    </dl>
-                                </li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="btn_wrap">
+                    <div class="btn_w">
+                        <a href="https://moon0suns.github.io/project10_medi" target="_blank">WEBPAGE</a>
+                    </div>
+                    <div class="btn_g">
+                        <a href="">GUIDE</a>
                     </div>
                 </div>
             </div>
             <div class="slide text_s bg03">
-                <div class="inner d_flex ">
-                    <div class="content_wrap">
-                        <div class="bbox">
-                            <div class="content">
-                                <figure class="port_img">
-                                    <img src="./images/invites.jpg" alt="">
-                                </figure>
+                <div class="inner">
+                    <div class="content_wrap d_flex">
+                        <div class="tit_wrap">
+                            <div class="tit_top">
+                                <h2>
+                                    <span>Project</span>
+                                    Invites Biocore
+                                    <strong>인바이츠 바이오코아</strong>
+                                </h2>
+                                <p>
+                                    남색 계열의 색감을 통해 기업의 고급스러운 이미지를 더해주었고
+                                    aos를 통해 동적인 효과를 주어 역동적이면서 부드러운 느낌으로 구성하였습니다.
+                                    그리고 정보전달을 위해 폰트의 강약조절을 하며 사용자가 편안한 시선에서 정보를 받아들일 수 있도록 디자인했습니다.
+                                </p>
                             </div>
-                            <div class="content_m">
-                                <figure class="port_img">
-                                    <img src="./images/invites_m.jpg" alt="">
-                                </figure>
-                            </div>
-                            <div class="btn_wrap">
+                            <div class="tit_center">
                                 <ul>
+                                    <strong>style</strong>
                                     <li>
-                                        <div class="btn_w">
-                                            <a href="https://moon0suns.github.io/project09_invites"
-                                                target="_blank">WEBPAGE</a>
-                                        </div>
+                                        <ul class="small_label">
+                                            <li>responsive</li>
+                                            <li>company</li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        <div class="btn_g">
-                                            <a href="">GUIDE</a>
-                                        </div>
+                                        <dl>
+                                            <dt>Type</dt>
+                                            <dd>반응형 웹디자인</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Tool</dt>
+                                            <dd>HTML5 / CSS3 / JAVASCRIPT(jQuery) / slick slider / aos</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Color</dt>
+                                            <dd>
+                                                <span class="color c01"></span>
+                                                <span class="color c02"></span>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Font</dt>
+                                            <dd>Pretendard / Noto Sans KR</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Work</dt>
+                                            <dd>개인작업 100%</dd>
+                                        </dl>
                                     </li>
                                 </ul>
                             </div>
                         </div>
+                        <div class="main_slide">
+                            <div class="itm itm01">
+                                <a href="https://moon0suns.github.io/project09_invites" target="_blank">
+                                    <img src="./images/invites.png" alt="">
+                                </a>
+                            </div>
+                            <div class="itm itm02">
+                                <a href="https://moon0suns.github.io/project09_invites" target="_blank">
+                                    <img src="./images/invites_m.png" alt="">
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tit_wrap">
-                        <div class="tit_top">
-                            <h2>
-                                <span>Project</span>
-                                Invites Biocore
-                                <strong>인바이츠 바이오코아</strong>
-                            </h2>
-                            <p>
-                                남색 계열의 색감을 통해 기업의 고급스러운 이미지를 더해주었고
-                                aos를 통해 동적인 효과를 주어 역동적이면서 부드러운 느낌으로 구성하였습니다.
-                                그리고 정보전달을 위해 폰트의 강약조절을 하며 사용자가 편안한 시선에서 정보를 받아들일 수 있도록 디자인했습니다.
-                            </p>
-                        </div>
-                        <div class="tit_center">
-                            <ul>
-                                <strong>style</strong>
-                                <li>
-                                    <ul class="small_label">
-                                        <li>responsive</li>
-                                        <li>company</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Type</dt>
-                                        <dd>반응형 웹디자인</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Tool</dt>
-                                        <dd>HTML5 / CSS3 / JAVASCRIPT(jQuery) / slick slider / aos</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Color</dt>
-                                        <dd>
-                                            <span class="color c01"></span>
-                                            <span class="color c02"></span>
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Font</dt>
-                                        <dd>Pretendard / Noto Sans KR</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Work</dt>
-                                        <dd>개인작업 100%</dd>
-                                    </dl>
-                                </li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="btn_wrap">
+                    <div class="btn_w">
+                        <a href="https://moon0suns.github.io/project09_invites" target="_blank">WEBPAGE</a>
+                    </div>
+                    <div class="btn_g">
+                        <a href="">GUIDE</a>
                     </div>
                 </div>
             </div>
             <div class="slide text_s bg04">
-                <div class="inner d_flex ">
-                    <div class="content_wrap">
-                        <div class="bbox">
-                            <div class="content">
-                                <figure class="port_img">
-                                    <img src="./images/winix.jpg" alt="">
-                                </figure>
+                <div class="inner">
+                    <div class="content_wrap d_flex">
+                        <div class="tit_wrap">
+                            <div class="tit_top">
+                                <h2>
+                                    <span>Project</span>
+                                    Winix
+                                    <strong>위닉스</strong>
+                                </h2>
+                                <p>
+                                    브랜드의 친근한 이미지와 다양한 상품을 돋보이게 하기 위해 간결하게 디자인했습니다.
+                                    브랜드의 특성으로 사용자가 많이 사용하는 A/S 관련 서비스 섹션을 심플하면서도 명확하게 디자인했습니다.
+                                </p>
                             </div>
-                            <div class="content_m">
-                                <figure class="port_img">
-                                    <img src="./images/winix_m.jpg" alt="">
-                                </figure>
-                            </div>
-                            <div class="btn_wrap">
+                            <div class="tit_center">
                                 <ul>
+                                    <strong>style</strong>
                                     <li>
-                                        <div class="btn_w">
-                                            <a href="https://moon0suns.github.io/project12_winix"
-                                                target="_blank">WEBPAGE</a>
-                                        </div>
+                                        <ul class="small_label">
+                                            <li>responsive</li>
+                                            <li>Brand</li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        <div class="btn_g">
-                                            <a href="">GUIDE</a>
-                                        </div>
+                                        <dl>
+                                            <dt>Type</dt>
+                                            <dd>반응형 웹디자인</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Tool</dt>
+                                            <dd>HTML5 / CSS3 / JAVASCRIPT(jQuery) / slick slider / swiper</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Color</dt>
+                                            <dd>
+                                                <span class="color c01"></span>
+                                                <span class="color c02"></span>
+                                                <span class="color c03"></span>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Font</dt>
+                                            <dd>Pretendard / Noto Sans KR</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Work</dt>
+                                            <dd>개인작업 100%</dd>
+                                        </dl>
                                     </li>
                                 </ul>
                             </div>
                         </div>
+                        <div class="main_slide">
+                            <div class="itm itm01">
+                                <a href="https://moon0suns.github.io/project12_winix" target="_blank">
+                                    <img src="./images/winix.png" alt="">
+                                </a>
+                            </div>
+                            <div class="itm itm02">
+                                <a href="https://moon0suns.github.io/project12_winix" target="_blank">
+                                    <img src="./images/winix_m.png" alt="">
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tit_wrap">
-                        <div class="tit_top">
-                            <h2>
-                                <span>Project</span>
-                                Winix
-                                <strong>위닉스</strong>
-                            </h2>
-                            <p>
-                                브랜드의 친근한 이미지와 다양한 상품을 돋보이게 하기 위해 간결하게 디자인했습니다.
-                                브랜드의 특성으로 사용자가 많이 사용하는 A/S 관련 서비스 섹션을 심플하면서도 명확하게 디자인했습니다.
-                            </p>
-                        </div>
-                        <div class="tit_center">
-                            <ul>
-                                <strong>style</strong>
-                                <li>
-                                    <ul class="small_label">
-                                        <li>responsive</li>
-                                        <li>Brand</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Type</dt>
-                                        <dd>반응형 웹디자인</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Tool</dt>
-                                        <dd>HTML5 / CSS3 / JAVASCRIPT(jQuery) / slick slider / swiper</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Color</dt>
-                                        <dd>
-                                            <span class="color c01"></span>
-                                            <span class="color c02"></span>
-                                            <span class="color c03"></span>
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Font</dt>
-                                        <dd>Pretendard / Noto Sans KR</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Work</dt>
-                                        <dd>개인작업 100%</dd>
-                                    </dl>
-                                </li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="btn_wrap">
+                    <div class="btn_w">
+                        <a href="https://moon0suns.github.io/project12_winix" target="_blank">WEBPAGE</a>
+                    </div>
+                    <div class="btn_g">
+                        <a href="">GUIDE</a>
                     </div>
                 </div>
             </div>
             <div class="slide text_s bg05">
-                <div class="inner d_flex ">
-                    <div class="content_wrap">
-                        <div class="bbox">
-                            <div class="content">
-                                <figure class="port_img">
-                                    <img src="./images/soongsil.jpg" alt="">
-                                </figure>
+                <div class="inner">
+                    <div class="content_wrap d_flex">
+                        <div class="tit_wrap">
+                            <div class="tit_top">
+                                <h2>
+                                    <span>Project</span>
+                                    Soongsil University
+                                    <strong>숭실대학교</strong>
+                                </h2>
+                                <p>
+                                    홈페이지 내 서비스들을 쉽게 볼 수 있도록 다단메뉴로 디테일하게 담았고
+                                    여러 가지 정보를 다양한 슬라이드와 탭메뉴, 영상을 통해 정보마다 가지고 있는
+                                    특성에 맞게 레이아웃을 디자인했습니다.
+                                </p>
                             </div>
-                            <div class="content_m">
-                                <figure class="port_img">
-                                    <img src="./images/soongsil_m.jpg" alt="">
-                                </figure>
-                            </div>
-                            <div class="btn_wrap">
+                            <div class="tit_center">
                                 <ul>
+                                    <strong>style</strong>
                                     <li>
-                                        <div class="btn_w">
-                                            <a href="https://moon0suns.github.io/project13_soong"
-                                                target="_blank">WEBPAGE</a>
-                                        </div>
+                                        <ul class="small_label">
+                                            <li>responsive</li>
+                                            <li>University</li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        <div class="btn_g">
-                                            <a href="">GUIDE</a>
-                                        </div>
+                                        <dl>
+                                            <dt>Type</dt>
+                                            <dd>반응형 웹디자인</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Tool</dt>
+                                            <dd>HTML5 / CSS3 / JAVASCRIPT(jQuery) / swiper</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Color</dt>
+                                            <dd>
+                                                <span class="color c01"></span>
+                                                <span class="color c02"></span>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Font</dt>
+                                            <dd>Pretendard / Noto Sans KR</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Work</dt>
+                                            <dd>개인작업 100%</dd>
+                                        </dl>
                                     </li>
                                 </ul>
                             </div>
                         </div>
+                        <div class="main_slide">
+                            <div class="itm itm01">
+                                <a href="https://moon0suns.github.io/project13_soong" target="_blank">
+                                    <img src="./images/soong.png" alt="">
+                                </a>
+                            </div>
+                            <div class="itm itm02">
+                                <a href="https://moon0suns.github.io/project13_soong" target="_blank">
+                                    <img src="./images/soong_m.png" alt="">
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tit_wrap">
-                        <div class="tit_top">
-                            <h2>
-                                <span>Project</span>
-                                Soongsil University
-                                <strong>숭실대학교</strong>
-                            </h2>
-                            <p>
-                                홈페이지 내 서비스들을 쉽게 볼 수 있도록 다단메뉴로 디테일하게 담았고
-                                여러 가지 정보를 다양한 슬라이드와 탭메뉴, 영상을 통해 정보마다 가지고 있는
-                                특성에 맞게 레이아웃을 디자인했습니다.
-                            </p>
-                        </div>
-                        <div class="tit_center">
-                            <ul>
-                                <strong>style</strong>
-                                <li>
-                                    <ul class="small_label">
-                                        <li>responsive</li>
-                                        <li>University</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Type</dt>
-                                        <dd>반응형 웹디자인</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Tool</dt>
-                                        <dd>HTML5 / CSS3 / JAVASCRIPT(jQuery) / swiper</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Color</dt>
-                                        <dd>
-                                            <span class="color c01"></span>
-                                            <span class="color c02"></span>
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Font</dt>
-                                        <dd>Pretendard / Noto Sans KR</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Work</dt>
-                                        <dd>개인작업 100%</dd>
-                                    </dl>
-                                </li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="btn_wrap">
+                    <div class="btn_w">
+                        <a href="https://moon0suns.github.io/project13_soong" target="_blank">WEBPAGE</a>
+                    </div>
+                    <div class="btn_g">
+                        <a href="">GUIDE</a>
                     </div>
                 </div>
             </div>
             <div class="slide text_s bg06">
-                <div class="inner d_flex ">
-                    <div class="content_wrap">
-                        <div class="bbox">
-                            <div class="content">
-                                <figure class="port_img">
-                                    <img src="./images/sulwhasoo.jpg" alt="">
-                                </figure>
+                <div class="inner">
+                    <div class="content_wrap d_flex">
+                        <div class="tit_wrap">
+                            <div class="tit_top">
+                                <h2>
+                                    <span>Project</span>
+                                    sulwhasoo
+                                    <strong>설화수</strong>
+                                </h2>
+                                <p>
+                                    브랜드의 주색 컬러를 적절하게 활용하면서 통일감을 주었고
+                                    브랜드의 고급미와 여성스러움을 강조하며 제작하였습니다.
+                                    브랜드가 소개하는 다양한 공간을 탭메뉴 안에 담았고 레이아웃을 시원하게 구성하였습니다.
+                                    이에 따라 사용자가 공간의 미를 느낄 수 있도록 디자인했습니다.
+                                </p>
                             </div>
-                            <div class="content_m">
-                                <figure class="port_img">
-                                    <img src="./images/sulwhasoo_m.jpg" alt="">
-                                </figure>
-                            </div>
-                            <div class="btn_wrap">
+                            <div class="tit_center">
                                 <ul>
+                                    <strong>style</strong>
                                     <li>
-                                        <div class="btn_w">
-                                            <a href="https://moon0suns.github.io/project08_sulwhasoo"
-                                                target="_blank">WEBPAGE</a>
-                                        </div>
+                                        <ul class="small_label">
+                                            <li>responsive</li>
+                                            <li>Brand</li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        <div class="btn_g">
-                                            <a href="">GUIDE</a>
-                                        </div>
+                                        <dl>
+                                            <dt>Type</dt>
+                                            <dd>반응형 웹디자인</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Tool</dt>
+                                            <dd>HTML5 / CSS3 / JAVASCRIPT(jQuery) / slick slider / swiper</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Color</dt>
+                                            <dd>
+                                                <span class="color c01"></span>
+                                                <span class="color c02"></span>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Font</dt>
+                                            <dd>Pretendard / Noto Sans KR</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Work</dt>
+                                            <dd>개인작업 100%</dd>
+                                        </dl>
                                     </li>
                                 </ul>
                             </div>
                         </div>
+                        <div class="main_slide">
+                            <div class="itm itm01">
+                                <a href="https://moon0suns.github.io/project08_sulwhasoo" target="_blank">
+                                    <img src="./images/sulwhsoo.png" alt="">
+                                </a>
+                            </div>
+                            <div class="itm itm02">
+                                <a href="https://moon0suns.github.io/project08_sulwhasoo" target="_blank">
+                                    <img src="./images/sulwhsoo_m.png" alt="">
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tit_wrap">
-                        <div class="tit_top">
-                            <h2>
-                                <span>Project</span>
-                                sulwhasoo
-                                <strong>설화수</strong>
-                            </h2>
-                            <p>
-                                브랜드의 주색 컬러를 적절하게 활용하면서 통일감을 주었고
-                                브랜드의 고급미와 여성스러움을 강조하며 제작하였습니다.
-                                브랜드가 소개하는 다양한 공간을 탭메뉴 안에 담았고 레이아웃을 시원하게 구성하였습니다.
-                                이에 따라 사용자가 공간의 미를 느낄 수 있도록 디자인했습니다.
-                            </p>
-                        </div>
-                        <div class="tit_center">
-                            <ul>
-                                <strong>style</strong>
-                                <li>
-                                    <ul class="small_label">
-                                        <li>responsive</li>
-                                        <li>Brand</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Type</dt>
-                                        <dd>반응형 웹디자인</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Tool</dt>
-                                        <dd>HTML5 / CSS3 / JAVASCRIPT(jQuery) / slick slider / swiper</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Color</dt>
-                                        <dd>
-                                            <span class="color c01"></span>
-                                            <span class="color c02"></span>
-                                        </dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Font</dt>
-                                        <dd>Pretendard / Noto Sans KR</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>Work</dt>
-                                        <dd>개인작업 100%</dd>
-                                    </dl>
-                                </li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="btn_wrap">
+                    <div class="btn_w">
+                        <a href="https://moon0suns.github.io/project08_sulwhasoo" target="_blank">WEBPAGE</a>
+                    </div>
+                    <div class="btn_g">
+                        <a href="">GUIDE</a>
                     </div>
                 </div>
             </div>
@@ -644,80 +622,295 @@
 
 
         <section class="section page03">
-            <div class="inner">
-                <div class="tranning">
-                    <ul>
-                        <li>
-                            <a href="">
-                                <div class="tr_con">
-                                    <div class="txt">
-                                        <h2>Busan Cleaning<span>부산청소</span></h2>
-                                    </div>
-                                    <div class="img_box">
-                                        <img src="./images/clean.png" alt="">
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <div class="tr_one">
-                                <p>2023 UX/UI web <span>design </span></p>
-                                <span class="tt">tranning</span>
-
-                            </div>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="tr_con">
-                                    <div class="txt">
-                                        <h2>Dokdo<span>독도</span></h2>
-                                    </div>
-                                    <div class="img_box">
-                                        <img src="./images/dokdo.png" alt="">
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="tr_con">
-                                    <div class="txt">
-                                        <h2>Seoga &amp; Cook<span>서가앤쿡</span></h2>
-                                    </div>
-                                    <div class="img_box">
-                                        <img src="./images/cook.png" alt="">
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="tr_con">
-                                    <div class="txt">
-                                        <h2>Cassia Sokcho<span>카시아속초</span></h2>
-                                    </div>
-                                    <div class="img_box">
-                                        <img src="./images/casia.png" alt="">
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="tr_con">
-                                    <div class="txt">
-                                        <h2>Outback<span>아웃백</span></h2>
-                                    </div>
-                                    <div class="img_box">
-                                        <img src="./images/outback.png" alt="">
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
+            <div class="inner menu_tab">
+                <div class="tab_menu">
+                    <ul class="tab_link">
+                        <li class="on"><a href=""><span>01</span> 독도</a></li>
+                        <li><a href=""><span>02</span> 현대엘리베이터</a></li>
+                        <li><a href=""><span>03</span> 호반건설</a></li>
+                        <li><a href=""><span>04</span> 아웃백</a></li>
+                        <li><a href=""><span>05</span> 깔끔이청소</a></li>
+                        <li><a href=""><span>06</span> 카시오속초</a></li>
                     </ul>
+                    <div class="tab_content">
+                        <div class="con on">
+                            <figure class="con_ptt">
+                                <img src="./images/dokdo.png" alt="">
+                            </figure>
+                            <div class="con_box">
+                                <span class="c_num">01</span>
+                                <span class="tr">tranning</span>
+                                <ul class="small_label">
+                                    <li>responsive</li>
+                                    <li>Brand</li>
+                                </ul>
+                                <div class="con_txt">
+                                    <span class="c_num">01</span>
+                                    <h2>dokdo</h2>
+                                    <div class="tit_center">
+                                        <ul>
+                                            <li>
+                                                <dl>
+                                                    <dt>Type</dt>
+                                                    <dd>반응형 웹디자인</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Tool</dt>
+                                                    <dd>HTML5 / CSS3 / JAVASCRIPT(jQuery) / swiper</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Work</dt>
+                                                    <dd>실습</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab_btn">
+                                    <a href="https://moon0suns.github.io/trn01_dokdo" target="_blank">WEBPAGE
+                                        <i class="xi-angle-right-min"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="con">
+                            <figure class="con_ptt">
+                                <img src="./images/hd.png" alt="">
+                            </figure>
+                            <div class="con_box">
+                                <span class="tr">tranning</span>
+                                <span class="c_num">02</span>
+                                <ul class="small_label">
+                                    <li>Brand</li>
+                                </ul>
+                                <div class="con_txt">
+                                    <span class="c_num">02</span>
+                                    <h2>hyundai elevato</h2>
+                                    <p></p>
+                                    <div class="tit_center">
+                                        <ul>
+                                            <li>
+                                                <dl>
+                                                    <dt>Type</dt>
+                                                    <dd>피시 웹디자인</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Tool</dt>
+                                                    <dd>HTML5 / CSS3 / JAVASCRIPT / swiper</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Work</dt>
+                                                    <dd>실습</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab_btn">
+                                    <a href="https://moon0suns.github.io/trn02_hd" target="_blank">WEBPAGE
+                                        <i class="xi-angle-right-min"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="con">
+                            <figure class="con_ptt">
+                                <img src="./images/hoban.png" alt="">
+                            </figure>
+                            <div class="con_box">
+                                <span class="tr">tranning</span>
+                                <span class="c_num">03</span>
+                                <ul class="small_label">
+                                    <li>pullpage</li>
+                                    <li>Brand</li>
+                                </ul>
+                                <div class="con_txt">
+                                    <span class="c_num">03</span>
+                                    <h2>hoban</h2>
+                                    <p></p>
+                                    <div class="tit_center">
+                                        <ul>
+                                            <li>
+                                                <dl>
+                                                    <dt>Type</dt>
+                                                    <dd>풀페이지 웹디자인</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Tool</dt>
+                                                    <dd>HTML5 / CSS3 / jQuery / slick</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Work</dt>
+                                                    <dd>실습</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab_btn">
+                                    <a href="https://moon0suns.github.io/trn03_hovan" target="_blank">WEBPAGE
+                                        <i class="xi-angle-right-min"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="con">
+                            <figure class="con_ptt">
+                                <img src="./images/outback.png" alt="">
+                            </figure>
+                            <div class="con_box">
+                                <span class="tr">tranning</span>
+                                <span class="c_num">04</span>
+                                <ul class="small_label">
+                                    <li>responsive</li>
+                                    <li>Brand</li>
+                                </ul>
+                                <div class="con_txt">
+                                    <span class="c_num">04</span>
+                                    <h2>outback</h2>
+                                    <p></p>
+                                    <div class="tit_center">
+                                        <ul>
+                                            <li>
+                                                <dl>
+                                                    <dt>Type</dt>
+                                                    <dd>반응형 웹디자인</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Tool</dt>
+                                                    <dd>HTML5 / CSS3 / jQuery / swiper</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Work</dt>
+                                                    <dd>실습</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab_btn">
+                                    <a href="https://moon0suns.github.io/trn04_outback" target="_blank">WEBPAGE
+                                        <i class="xi-angle-right-min"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="con">
+                            <figure class="con_ptt">
+                                <img src="./images/clean.png" alt="">
+                            </figure>
+                            <div class="con_box">
+                                <span class="tr">tranning</span>
+                                <span class="c_num">05</span>
+                                <ul class="small_label">
+                                    <li>gnuboard</li>
+                                    <li>responsive</li>
+                                </ul>
+                                <div class="con_txt">
+                                    <span class="c_num">05</span>
+                                    <h2>busan Cleaning</h2>
+                                    <p></p>
+                                    <div class="tit_center">
+                                        <ul>
+                                            <li>
+                                                <dl>
+                                                    <dt>Type</dt>
+                                                    <dd>반응형 웹디자인</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Tool</dt>
+                                                    <dd>HTML5 / CSS3 / jQuery / slick</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Work</dt>
+                                                    <dd>실습</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab_btn">
+                                    <a href="https://moon0suns.github.io/trn05_ggum" target="_blank">WEBPAGE
+                                        <i class="xi-angle-right-min"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="con">
+                            <figure class="con_ptt">
+                                <img src="./images/casia.png" alt="">
+                            </figure>
+                            <div class="con_box">
+                                <span class="tr">tranning</span>
+                                <span class="c_num">06</span>
+                                <ul class="small_label">
+                                    <li>responsive</li>
+                                    <li>Brand</li>
+                                </ul>
+                                <div class="con_txt">
+                                    <span class="c_num">06</span>
+                                    <h2>Cassia Sokcho </h2>
+                                    <p></p>
+                                    <div class="tit_center">
+                                        <ul>
+                                            <li>
+                                                <dl>
+                                                    <dt>Type</dt>
+                                                    <dd>반응형 웹디자인</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Tool</dt>
+                                                    <dd>HTML5 / CSS3 / jQuery / slick</dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>Work</dt>
+                                                    <dd>실습</dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab_btn">
+                                    <a href="https://moon0suns.github.io/trn06_casia" target="_blank">WEBPAGE
+                                        <i class="xi-angle-right-min"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
+
+
+
+
+
 
         <section class="section page04">
             <div class="inner">
@@ -747,12 +940,12 @@
                                                 </li>
                                                 <li>
                                                     <div class="itm">
-                                                        <img src="./images/KakaoTalk_20230901_092428043_08.jpg" alt="">
+                                                        <img src="./images/photo01.jpg" alt="">
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="itm">
-                                                        <img src="./images/KakaoTalk_20230901_092428043_04.jpg" alt="">
+                                                        <img src="./images/photo02.jpg" alt="">
                                                     </div>
                                                 </li>
                                                 <li>
@@ -767,7 +960,7 @@
                                                 </li>
                                                 <li>
                                                     <div class="itm">
-                                                        <img src="./images/KakaoTalk_20230901_112756929_04.jpg" alt="">
+                                                        <img src="./images/photo03.jpg" alt="">
                                                     </div>
                                                 </li>
 
@@ -789,9 +982,7 @@
                         </div>
                     </div>
                     <div class="f_right">
-
                         <div class="tit">
-
                             <p>
                                 <span class="sm">2023 UX/UI</span>
                                 <span> WEB-DESIGN </span>
@@ -834,6 +1025,7 @@
                             <li>
                                 <div class="txt itm05">
                                     <h3>Web-Site</h3>
+                                    <p>moon0suns.github.io</p>
                                 </div>
                             </li>
                         </ul>
@@ -843,12 +1035,7 @@
                     <img src="./images/havefun_CD.png" alt="">
                 </div>
             </div>
-
         </section>
-
-        <footer class="section footer">
-
-        </footer>
 
     </div>
 
@@ -860,31 +1047,29 @@
             <li>
                 <a href="#p02">Project</a>
                 <ul class="sub_cover">
-                    <li><a href=""><span>01</span>forEVer
+                    <li><a href="#p02"><span>01</span>forEVer
                             company
                             <strong>포에버 회사</strong></a></li>
-                    <li><a href=""><span>02</span>Mediram Hospital <strong>메디람
+                    <li><a href="#p02/1"><span>02</span>Mediram Hospital <strong>메디람
                                 한방병원</strong></a></li>
-                    <li><a href=""><span>03</span>Invites Biocore
+                    <li><a href="#p02/2"><span>03</span>Invites Biocore
                             <strong>인바이츠바이오코아</strong></a></li>
-                    <li><a href=" "><span>05</span>Winix
+                    <li><a href="#p02/3"><span>05</span>Winix
                             <strong>위닉스</strong></a></li>
-                    <li><a href=""><span>04</span>Soongsil University
+                    <li><a href="#p02/4"><span>04</span>Soongsil University
                             <strong>숭실대학교</strong></a></li>
-                    <li><a href=""><span>06</span>sulwhasoo
+                    <li><a href="#p02/5"><span>06</span>sulwhasoo
                             <strong>설화수</strong></a></li>
                 </ul>
             </li>
             <li><a href="#p03">Tranning</a></li>
             <li><a href="#p04">Profile</a></li>
-            <li>
-                <a href="#footer">footer</a>
-            </li>
         </ul>
         <button class="menu">
             <span>link</span>
         </button>
     </aside>
+
 </body>
 
 </html>
